@@ -1,9 +1,11 @@
-#include<stdio.h>
+#include <stdio.h>
 /**
- * main - Entry point
- * Return Always (Success)
-*/ 
+ * main - a C program that prints exactly Programming is like building a multilingual puzzle using a function and return
+ * Return: 0(Success)
+ */ 
 int main(void)
 {
-	puts("\"Programming is like building a multilingual puzzle");
+puts("\"Programming is like building a multilingual puzzle");
+return (0);
 }
+
