@@ -1,4 +1,4 @@
-include"main.h"
+#include"main.h"
 /**
  * _isalpha - check for alphabetic character
  * @c:the character to be checked
