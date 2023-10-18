@@ -18,8 +18,8 @@ char *_strcat(char *dest, char *src)
 	j = 0;
 	while (src[j] != '\0')
 	{
-		dest[i] = src[i];
-		j++;
+		dest[i] = src[j];
+		i++;
 		j++;
 	}
 	dest[i] = '\0';
