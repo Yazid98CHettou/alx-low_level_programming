@@ -1,3 +1,4 @@
+#!/bin/bash
 #include"main.h"
 /**
  * _strlen - returns the lengh of a string
