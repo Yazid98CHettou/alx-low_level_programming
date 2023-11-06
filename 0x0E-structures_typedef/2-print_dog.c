@@ -1,7 +1,7 @@
 #include"dog.h"
 #include<stdio.h>
 /**
- * printçdog - print a struct dog
+ * print_dog - print a struct dog
  * @d:struct dog
  * Return : no retrun
  */
@@ -15,7 +15,7 @@ void print_dog(struct dog *d)
 			printf("Name: %s`\n, d->name");
 		printf("Age: %f\n", d->age);
 		if(!(d->owner))
-			printf("owner: (nil)\n)");
+			printf("owner: (nil)\n");
 		else
 			printf("owner: %s\n", d->owner);
 	}
