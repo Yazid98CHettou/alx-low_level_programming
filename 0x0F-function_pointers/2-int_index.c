@@ -9,7 +9,7 @@
  * if no element mathces fucntion doas not return 0
  * return -1. if size <= 0,
  */
-int int_index(int *array,int size, int (*cmp)(int))
+int int_index(int *array, int size, int (*cmp)(int))
 {
 	int i;
 
