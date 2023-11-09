@@ -5,7 +5,7 @@
  * @n: number of integers passed to the fucntion
  * Return: no return
  */
-void print_numbers(const char *separtor, const unsigned int n, ...)
+void print_numbers(const char *separator, const unsigned int n, ...)
 {
 	va_list valist;
 	unsigned int i;
@@ -14,9 +14,9 @@ void print_numbers(const char *separtor, const unsigned int n, ...)
 
 	for (i = 0; i < n; i++)
 	{
-		print("%d", va_arg(valist, int));
-		if (separtor && i < n -1)
-			print("%s", separator);
+		printf("%d", va_arg(valist, int));
+		if (separator && i < n -1)
+			printf("%s", separator);
 	}
 	printf("\n");
 	va_end(valist);
