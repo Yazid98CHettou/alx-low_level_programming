@@ -5,7 +5,7 @@
  * @n:number of strings passed to the function
  * Return: no return
  */
-void print_strings(cosnt char *separator, const unsigned int n, ...)
+void print_strings(const char *separator, const unsigned int n, ...)
 {
 	va_list valist;
 	unsigned int i;
@@ -25,6 +25,6 @@ void print_strings(cosnt char *separator, const unsigned int n, ...)
 			if (separator)
 				printf("%s", separator);
 	}
-	print("\n");
+	printf("\n");
 	va_end(valist);
 }
