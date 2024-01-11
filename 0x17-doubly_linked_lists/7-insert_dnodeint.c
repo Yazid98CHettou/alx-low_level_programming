@@ -31,7 +31,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 
 	/* search of position to insert */
 	indx = idx - 1;
-	while (aux_node && cont != indx)
+	while (aux_node && cnt != indx)
 	{
 		cnt++;
 		aux_node = aux_node->next;
