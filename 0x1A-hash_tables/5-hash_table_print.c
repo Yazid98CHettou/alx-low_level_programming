@@ -14,7 +14,7 @@ void hash_table_print(const hash_table_t *ht)
 	if (ht && ht->array)
 	{
 		putchar('{');
-		for (indx = 0; indx < ht->size; index++)
+		for (indx = 0; indx < ht->size; indx++)
 		{
 			if (ht->array[indx])
 			{
