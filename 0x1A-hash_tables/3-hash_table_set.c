@@ -21,7 +21,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	if (!value_copy)
 		return (0);
 
-	index = key_indx((unsigned char *)key, ht->size);
+	indx = key_indx((unsigned char *)key, ht->size);
 	temp = ht->array[indx];
 	while (temp)
 	{
