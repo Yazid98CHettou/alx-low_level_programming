@@ -19,8 +19,8 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 	if (!key || key[0] == '\0')
 		return (NULL);
 
-	indx = key_indx((unsigned char *)key, ht->size);
-	current = ht->array[index];
+	indx = key_index((unsigned char *)key, ht->size);
+	current = ht->array[indx];
 	while (current)
 	{
 		if (strcmp(current->key, key) == 0)
