@@ -1,6 +1,7 @@
 #include "hash_tables.h"
+
 /**
- * hash_table_set -Adds an element to a hash table
+ * hash_table_set - adds an element to a hash table
  * @ht: target hash table to add or update the key/value
  * @key: key is string used for value lookup, cannot be empty string
  * @value: value associated with key, can be empty string
@@ -10,7 +11,7 @@
 
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
-	unsigned long int indx;
+	unsigned long int idx;
 	hash_node_t *new, *temp;
 	char *key_copy, *value_copy;
 
@@ -21,8 +22,8 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	if (!value_copy)
 		return (0);
 
-	indx = key_indx((unsigned char *)key, ht->size);
-	temp = ht->array[indx];
+	idx = key_index((unsigned char *)key, ht->size);
+	temp = ht->array[idx];
 	while (temp)
 	{
 		if (strcmp(temp->key, key) == 0)
@@ -43,7 +44,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		return (0);
 	new->key = key_copy;
 	new->value = value_copy;
-	new->next = ht->array[indx];
-	ht->array[indx] = new;
+	new->next = ht->array[idx];
+	ht->array[idx] = new;
 	return (1);
 }
