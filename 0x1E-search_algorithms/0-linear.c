@@ -1,9 +1,9 @@
 #include "search_algos.h"
 
 /**
- * Prototype : int linear_search(int *array, size_t size, int value);
- * linear_search - function that searches for a value
- * in an array of integers.
+ * linear_search - Fucntion that search a value using
+ * Linear Search algorithm
+ *
  * @array: Array with values to compare
  * @size: Size of array
  * @value: value to search
